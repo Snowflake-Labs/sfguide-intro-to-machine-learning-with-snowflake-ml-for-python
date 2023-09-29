@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python==3.9
   - snowflake-snowpark-python==1.5.1
-  - snowflake-ml-python==1.0.2
+  - snowflake-ml-python==1.0.7
   - pandas==1.5.3
   - xgboost==1.7.3
   - notebook==6.5.4
