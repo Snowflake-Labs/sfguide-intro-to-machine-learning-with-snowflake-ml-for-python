@@ -12,4 +12,4 @@ dependencies:
   - seaborn
   - matplotlib
   - pip:
-    - snowflake-ml-python==1.0.9
+    - snowflake-ml-python==1.0.10
