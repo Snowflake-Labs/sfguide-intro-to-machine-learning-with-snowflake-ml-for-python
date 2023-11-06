@@ -11,4 +11,4 @@ dependencies:
   - cachetools
   - seaborn
   - matplotlib
-  - snowflake-ml-python==1.0.10
+  - snowflake-ml-python
