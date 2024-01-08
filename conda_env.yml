@@ -2,7 +2,7 @@ name: snowpark-ml-hol
 channels:
   - https://repo.anaconda.com/pkgs/snowflake
 dependencies:
-  - python=3.9
+  - python=3.11
   - snowflake-snowpark-python
   - pandas
   - xgboost
