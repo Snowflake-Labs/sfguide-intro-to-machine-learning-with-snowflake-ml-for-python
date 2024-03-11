@@ -1,8 +1,11 @@
+# Note: If you're using a Mac with the M1 chip, 
+# please set your CONDA_SUBDIR to osx-arm like so before creating the environment:
+# CONDA_SUBDIR=osx-arm64 conda env create -f conda_env.yml
 name: snowpark-ml-hol
 channels:
   - https://repo.anaconda.com/pkgs/snowflake
 dependencies:
-  - python=3.11
+  - python=3.10
   - snowflake-snowpark-python
   - pandas
   - xgboost
@@ -11,5 +14,4 @@ dependencies:
   - cachetools
   - seaborn
   - matplotlib
-  - pip:
-    - snowflake-ml-python # temporary till it's in the Snowflake conda channel
+  - snowflake-ml-python
