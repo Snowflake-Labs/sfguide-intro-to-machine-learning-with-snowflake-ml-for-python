@@ -35,7 +35,7 @@ Now, let's create our first Notebook by importing a `.ipynb` file. First, make s
 
 Next, click the gray upload/import .ipynb button, and select [1_sf_nb_snowpark_ml_data_ingest.ipynb](./1_sf_nb_snowpark_ml_data_ingest.ipynb) from your local filesystem:
 
-![Notebook Upload](./assets/nb_import_ipynb.png)
+![Notebook Upload](./assets/nb_import.png)
 
 Leave the populated notebook name as-is (or change it if you'd like!), and make sure that the location is set to `ML_HOL_DB` and `ML_HOL_SCHEMA`. Lastly, make sure the Notebook warehouse is `ML_HOL_WH`, and click Create:
 
