@@ -8,6 +8,7 @@ dependencies:
   - python=3.10
   - snowflake-snowpark-python
   - pandas
+  - lightgbm
   - xgboost
   - notebook
   - scikit-learn
