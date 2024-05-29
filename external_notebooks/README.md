@@ -13,10 +13,7 @@ Want to try out the Getting Started with Snowflake ML for Python Quickstart usin
 - A Snowflake account with [Anaconda Packages enabled by ORGADMIN](https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-packages.html#using-third-party-packages-from-anaconda). If you do not have a Snowflake account, you can register for a [free trial account](https://signup.snowflake.com/).
 - A Snowflake account login with a role that has the ability to create database, schema, tables, stages, user-defined functions, and stored procedures. If not, you will need to register for a free trial or use a different role.
 
-###
-
-
-
+### Set up the Snowflake environment
 To get started, first login to Snowsight and run the following [setup.sql](./setup.sql) in a SQL worksheet (we need  to create the database, warehouse, schema, etc. that we will use for our ML project).
 ```sql
 USE ROLE SYSADMIN;
@@ -45,23 +42,28 @@ LS @DIAMONDS_ASSETS;
 - Download and install the miniconda installer from https://conda.io/miniconda.html. (OR, you may use any other Python environment with Python 3.11, for example, virtualenv).
 - Open a new terminal window and execute the following commands in the same terminal window:
     - Create the conda environment.
-    > conda env create -f conda_env.yml
+        ```
+        conda env create -f conda_env.yml 
+        ```
     - Activate the conda environment.
-    > conda activate snowpark-ml-hol
+        ``` 
+        conda activate snowpark-ml-hol 
+        ```
     - Optionally start notebook server:
-    > $ jupyter notebook &> /tmp/notebook.log &
+        ``` 
+        $ jupyter notebook &> /tmp/notebook.log & 
+        ```
+- Update [connection.json](./connection.json) with your Snowflake account details and credentials. Here's a sample based on the object names we created in the last step:
+    ```
+    {
+    "account"   : "<your_account_identifier_goes_here>",
+    "user"      : "<your_username_goes_here>",
+    "password"  : "<your_password_goes_here>",
+    "role"      : "ACCOUNTADMIN",
+    "warehouse" : "ML_HOL_WH",
+    "database"  : "ML_HOL_DB",
+    "schema"    : "ML_HOL_SCHEMA"
+    }
+    ```
 
-Update [connection.json](./connection.json) with your Snowflake account details and credentials. Here's a sample based on the object names we created in the last step:
-```
-{
-  "account"   : "<your_account_identifier_goes_here>",
-  "user"      : "<your_username_goes_here>",
-  "password"  : "<your_password_goes_here>",
-  "role"      : "ACCOUNTADMIN",
-  "warehouse" : "ML_HOL_WH",
-  "database"  : "ML_HOL_DB",
-  "schema"    : "ML_HOL_SCHEMA"
-}
-```
-
-> **Note:** For the account parameter above, specify your account identifier and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection. For more details on that, refer to the documentation.
+    > **Note:** For the account parameter above, specify your account identifier and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection. For more details on that, refer to the documentation.
