@@ -1,5 +1,5 @@
 ## Using an External IDE
-Want to try out the Getting Started with Snowflake ML for Python Quickstart using an external IDE? This folder contains three notebooks that are ready-to-use in your Python environment:
+Want to try out the [Getting Started with Snowflake ML for Python Quickstart](https://quickstarts.snowflake.com/guide/intro_to_machine_learning_with_snowpark_ml_for_python/index.html?index=..%2F..index#0) using an external IDE? This folder contains three notebooks that are ready-to-use in your Python environment:
 - [1_snowflake_ml_data_ingest.ipynb](./1_snowflake_ml_data_ingest.ipynb)
 - [2_snowflake_ml_feature_transformations.ipynb](./2_snowflake_ml_feature_transformations.ipynb)
 - [3_snowflake_ml_model_training_inference.ipynb](./3_snowflake_ml_model_training_inference.ipynb)
