@@ -50,7 +50,6 @@ input_cols =[
  'CLARITY_OE',
  'COLOR',
  'CLARITY',
- 'PRICE',
  'CUT']
 
 #Column data types
@@ -63,7 +62,6 @@ input_data_types = ['float',
  'float',
  'float',
  'float',
- 'string',
  'string',
  'string',
  'string']
@@ -80,7 +78,6 @@ input_default_vals = [0.25,
  4.0,
  'G',
  'VS2',
- 2500,
  'IDEAL']
 
 #initialize dictionary for storing inputs
