@@ -1,6 +1,6 @@
 [![Snowflake - Certified](https://img.shields.io/badge/Snowflake-Certified-2ea44f?style=for-the-badge&logo=snowflake)](https://developers.snowflake.com/solutions/)
 
-# Getting Started with Snowflake ML for Python
+# Getting Started with Snowflake ML in Notebooks
 
 ## Overview
 Through this quickstart guide, you will explore what's new in Snowflake for Machine Learning. You will build an end to end ML workflow from feature engineering to model training and deployment using Snowflake ML in Snowflake Notebooks.
