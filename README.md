@@ -2,7 +2,7 @@
 
 # Getting Started with Snowflake ML in Notebooks
 
-## Overview
+## Overview of MLOPS in Snowflake
 Through this quickstart guide, you will explore what's new in Snowflake for Machine Learning. You will build an end to end ML workflow from feature engineering to model training and deployment using Snowflake ML in Snowflake Notebooks.
 
 ## Step-By-Step Guide
