@@ -1,9 +1,0 @@
-name: app_environment  
-channels:  
-  - snowflake  
-dependencies:  
-  - matplotlib
-  - seaborn
-  - scikit-learn=1.3.0
-  - snowflake-ml-python
-  - shap
