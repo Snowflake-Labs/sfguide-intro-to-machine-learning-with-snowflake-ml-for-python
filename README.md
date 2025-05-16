@@ -1,6 +1,6 @@
 [![Snowflake - Certified](https://img.shields.io/badge/Snowflake-Certified-2ea44f?style=for-the-badge&logo=snowflake)](https://developers.snowflake.com/solutions/)
 
-# Getting Started with Snowflake ML in Notebooks
+# Getting Started with ML Development in Snowflake
 
 ## Overview
 Through this quickstart guide, you will learn how to get started with Machine Learning in Snowflake. You will build a simple ML development workflow from feature engineering to model training and inference using Snowflake ML in Snowflake Notebooks on Container Runtime.
