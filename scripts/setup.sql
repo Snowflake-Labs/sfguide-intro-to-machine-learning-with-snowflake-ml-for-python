@@ -95,9 +95,12 @@ IDLE_AUTO_SHUTDOWN_TIME_SECONDS = 3600;
 ALTER NOTEBOOK ML_HOL_DB.ML_HOL_SCHEMA.ML_HOL_MODELING ADD LIVE VERSION FROM LAST;
 ALTER NOTEBOOK ML_HOL_DB.ML_HOL_SCHEMA.ML_HOL_MODELING SET EXTERNAL_ACCESS_INTEGRATIONS = ('allow_all_integration');
 
--- Create Streamlit
+-- create Streamlit
 CREATE OR REPLACE STREAMLIT ML_HOL_STREAMLIT_APP
-ROOT_LOCATION = '@ML_HOL_DB.ML_HOL_SCHEMA.GITHUB_INTEGRATION_ML_HOL/branches/main'
-MAIN_FILE = 'scripts/streamlit/diamonds_pred_app.py'
-QUERY_WAREHOUSE = ML_HOL_WH
+FROM '@ML_HOL_DB.ML_HOL_SCHEMA.GITHUB_INTEGRATION_ML_HOL/branches/main/scripts/streamlit/'
+MAIN_FILE = 'diamonds_pred_app.py'
+QUERY_WAREHOUSE = 'ML_HOL_WH'
+TITLE = 'ML_HOL_STREAMLIT_APP'
 COMMENT = '{"origin":"sf_sit-is", "name":"e2e_ml_snowparkpython", "version":{"major":1, "minor":0}, "attributes":{"is_quickstart":1, "source":"streamlit"}}';
+
+ALTER STREAMLIT ML_HOL_STREAMLIT_APP ADD LIVE VERSION FROM LAST;
