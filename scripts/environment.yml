@@ -1,0 +1,8 @@
+name: sf_env
+channels:
+- snowflake
+dependencies:
+- snowflake-ml-python
+- altair
+- streamlit
+- joblib
