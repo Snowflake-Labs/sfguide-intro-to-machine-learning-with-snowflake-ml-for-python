@@ -7,7 +7,7 @@ import joblib
 import os
 
 # --- App Title and Description ---
-st.title("💎 Diamond Price Prediction")
+st.title("Diamond Price Prediction")
 st.write(
     "This application predicts the price of a diamond based on its characteristics. "
     "Use the sliders and dropdowns below to enter the diamond's features and click 'Predict Price' to see the estimated value."
